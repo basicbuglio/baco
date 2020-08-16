@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+    <title>Poručite | Opruge Baćo</title>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <div class="navigation__logo-box">
+        <img src="img/logo.png" alt="logo" class="navigation__logo" />
+        <span class="navigation__logo-title">SZR Baćo</span>
+      </div>
+
+      <div class="navigation__container">
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="index.html" class="navigation__link">Početna</a></li>
+            <li class="navigation__item"><a href="about.html" class="navigation__link">O nama</a></li>
+            <li class="navigation__item"><a href="contact.html" class="navigation__link">Kontakt</a></li>
+            <li class="navigation__item"><a href="order.html" class="navigation__link">Poručite</a></li>
+          </ul>
+        </nav>
+        <a href="order.html">
+          <img src="img/srpski.jpg" class="navigation__language" alt="">
+        </a>
+        <a href="en/order.html">
+          <img src="img/engleski.png" class="navigation__language" alt="">
+        </a>
+      </div>
+    </div>
+
+    <header class="header header--small">
+      <h1 class="heading-primary heading-primary--small">
+        Poručivanje
+      </h1>
+    </header>
+    <main>
+      <section class="order">
+        <h2 class="heading-secondary">Poručivanje naših proizvoda</h2>
+        <p class="paragraph">
+          Nudimo Vam mogućnost naručivanja pritisnih i zateznih opruga pomoću
+          naših šablona koji se nalaze na ovoj stranici
+        </p>
+        <p class="paragraph">
+          Ostale tipove opruga možemo izraditi na osnovu vaših šablona ili
+          uzoraka.
+        </p>
+
+        <h3 class="heading-tertiary">
+          Izaberite tip opruge koji želite da poručite
+        </h3>
+
+        <div class="order__container">
+          <div class="order__type" id="compressive-select">
+            <h4 class="heading-fourth">
+              Pritisne opruge
+            </h4>
+            <img
+              src="img/compressive-spring-icon.png"
+              alt="kompresivna opruga"
+            />
+          </div>
+          <div class="order__type" id="extensive-select">
+            <h4 class="heading-fourth">
+              Zatezne opruge
+            </h4>
+            <img src="img/extensive-spring-icon.png" alt="ekstenzivna opruga" />
+          </div>
+          <div class="order__type" id="torsion-select">
+            <h4 class="heading-fourth">
+              Torzione opruge
+            </h4>
+            <img src="img/torsion-spring-icon.png" alt="torziona opruga" />
+          </div>
+          <div class="order__type" id="special-select">
+            <h4 class="heading-fourth">
+              Specijalne opruge i prozvodi od opružnog lima
+            </h4>
+            <img src="img/leaf-spring-icon.png" alt="specijalne opruge" />
+          </div>
+        </div>
+      </section>
+
+      <section class="forms">
+        <form
+          action="https://formspree.io/mbjzzbbb"
+          method="POST"
+          class="form form--compressive order__section"
+          id="form-compressive"
+        >
+          <h3 class="heading-tertiary">Pritisne opruge</h3>
+          <h4 class="heading-fourth">Podaci o kupcu</h4>
+          <fieldset>
+            <div class="inputs-wrapper">
+              <div>
+                <label for="name-comp">Ime i prezime</label>
+                <input type="text" name="ime-prezime" id="name-comp" required />
+              </div>
+              <div>
+                <label for="comp-name-comp">Firma</label>
+                <input type="text" name="firma-ime" id="comp-name-comp" />
+              </div>
+              <div>
+                <label for="phone-comp">Broj telefona</label>
+                <input type="tel" name="telefon" id="phone-comp" required />
+              </div>
+              <div>
+                <label for="email-comp">Email</label>
+                <input type="email" name="email" id="email-comp" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Podaci o oprugama</h4>
+          <fieldset>
+            <img
+            src="img/compressive-template.png"
+            alt="šablon kompresivne opruge"
+            class="template"
+          />
+            <div class="spring-dimensions">
+              <label for="wire-rad-comp">Prečnik žice (d)</label>
+              <input type="text" name="prečnik-žice" id="wire-rad-comp" required/>
+              <label for="out-rad-comp">Spoljašnji prečnik opruge (De)</label>
+              <input
+                type="text"
+                name="spoljašnji-prečnik-opruge"
+                id="out-rad-comp"
+                required
+              />
+              <label for="med-rad-comp">Srednji prečnik opruge (Dm)</label>
+              <input
+                type="text"
+                name="srednji-prečnik-opruge"
+                id="med-rad-comp"
+              />
+              <label for="inn-rad-comp">Unutrašnji prečnik opruge (Di)</label>
+              <input
+                type="text"
+                name="unutrašnji-prečnik-opruge"
+                id="inn-rad-comp"
+              />
+              <label for="length-comp">Slobodna dužina opruge (Lo)</label>
+              <input
+                type="text"
+                name="slobodna-dužina-opruge"
+                id="length-comp"4
+                required
+              />
+              <label for="work-num-comp">Broj radnih navoja (nr)</label>
+              <input type="text" name="broj-radnih-navoja" id="work-num-comp" required/>
+              <label for="coil-num-comp">Ukupan broj navoja (nu)</label>
+              <input type="text" name="ukupan-broj-navoja" id="coil-num-comp" required/>
+              <label for="dir-comp">Smer motanja (levi/desni)</label>
+              <input type="text" name="smer-motanja" id="dir-comp" required/>
+              <label for="step-comp">Korak opruge (H)</label>
+              <input type="text" name="korak-opruge" id="step-comp" />
+            </div>
+
+          </fieldset>
+
+          <h4 class="heading-fourth">Sile u opruzi</h4>
+          <fieldset>
+            <div class="inputs-wrapper">
+              <div>
+                <label for="tough-comp">Krutost (c)</label>
+                <input type="text" name="krutost" id="tough-comp" />
+              </div>
+              <div>
+                <label for="L1-comp">Dužina (L1)</label>
+                <input type="text" name="dužina-l1" id="L1" -comp />
+              </div>
+              <div>
+                <label for="L2-comp">Dužina (L2)</label>
+                <input type="text" name="dužina-l2" id="L2-comp" />
+              </div>
+              <div>
+                <label for="Ln-comp">Dužina (Ln)</label>
+                <input type="text" name="dužina-ln" id="Ln-comp" />
+              </div>
+              <div>
+                <label for="Fo-comp">Sila prednapona (F0)</label>
+                <input type="text" name="sila-prednapona-f0" id="Fo-comp" />
+              </div>
+              <div>
+                <label for="F1-comp">Sila (F1)</label>
+                <input type="text" name="sila-f1" id="F1-comp" />
+              </div>
+              <div>
+                <label for="F2-comp">Sila (F2)</label>
+                <input type="text" name="sila-f2" id="F2-comp" />
+              </div>
+              <div>
+                <label for="Fn-comp">Sila (Fn)</label>
+                <input type="text" name="sila-fn" id="Fn-comp" />
+              </div>
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Materijal</h4>
+          <fieldset>
+            <div>
+              <input type="radio" name="materijal" id="steel-pat-comp" />
+              <label for="steel-pat-comp"
+                >EN 10270-1 SM/SH/DH (DIN 17223) -čelična patentirana žica B, C,
+                D klasa</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="materijal" id="spring-rod-comp" />
+              <label for="spring-rod-comp"
+                >EN 10270-2 (DIN 17225)- opružne šipke (Č 4230/Č4830)</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="materijal" id="chrome-nickel-comp" />
+              <label for="chrome-nickel-comp"
+                >EN 10270-3 (DIN 17224) hrom-nikl (PROHROM) žica</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="materijal" id="spring-sheet-comp" />
+              <label for="spring-sheet-comp"
+                >DIN 17222 opružni limovi (Č 4830/Č1730)</label
+              >
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Hemijska zaštita</h4>
+          <fieldset>
+            <div>
+              <input type="radio" name="hemijska-zaštita" id="no-pro-comp" />
+              <label for="no-pro-comp">Bez zaštite</label>
+            </div>
+            <div>
+              <input type="radio" name="hemijska-zaštita" id="white-comp" />
+              <label for="white-comp">Belo pocinkovano</label>
+            </div>
+            <div>
+              <input type="radio" name="hemijska-zaštita" id="yellow-comp" />
+              <label for="yellow-comp">Žuto pocinkovano</label>
+            </div>
+            <div>
+              <input type="radio" name="hemijska-zaštita" id="black-comp" />
+              <label for="black-comp">Crno pocinkovano</label>
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Količina</h4>
+          <fieldset>
+            <input type="number" name="količina" required />
+          </fieldset>
+
+          <h4 class="heading-fourth">Dodatne napomene</h4>
+          <textarea
+            name="dodatne-napomene"
+            id="directions-comp"
+            cols="50"
+            rows="10"
+          ></textarea>
+
+          <p class="paragraph">
+            * pre poručivanja proverite da li ste ispravno popunili porudžbenicu
+          </p>
+          <button class="submit">Poručite</button>
+        </form>
+
+        <form action="#" class="form form--extensive order__section">
+          <h3 class="heading-tertiary">Zatezne opruge</h3>
+          <h4 class="heading-fourth">Podaci o kupcu</h4>
+          <fieldset>
+            <div class="inputs-wrapper">
+              <div>
+                <label for="name-ext">Ime i prezime</label>
+                <input type="text" name="name-ext" id="name-ext" required />
+              </div>
+              <div>
+                <label for="comp-name-ext">Firma</label>
+                <input type="text" name="company-name-ext" id="comp-name-ext" />
+              </div>
+              <div>
+                <label for="phone-ext">Broj telefona</label>
+                <input type="tel" name="phone-ext" id="phone-ext" required />
+              </div>
+              <div>
+                <label for="email-ext">Email</label>
+                <input type="email" name="email-ext" id="email-ext" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Podaci o oprugama</h4>
+          <fieldset>
+            <img
+            src="img/extensive-template.png"
+            alt="šablon kompresivne opruge"
+            class="template"
+          />
+            <div class="spring-dimensions">
+              <label for="wire-rad-ext">Prečnik žice (d)</label>
+              <input type="text" name="wire-rad-ext" id="wire-rad-ext" required/>
+              <label for="out-rad-ext">Spoljašnji prečnik opruge (De)</label>
+              <input type="text" name="out-rad-ext" id="out-rad-ext" required/>
+              <label for="length-ext">Dužina valjka opruge (Lk)</label>
+              <input type="text" name="length-ext" id="length-ext" required/>
+              <label for="free-length-ext">Slobodna dužina opruge (Lo)</label>
+              <input type="text" name="free-length-ext" id="free-length-ext" required/>
+              <label for="ear-lenght-ext">Dužina ušice (Lh)</label>
+              <input type="text" name="ear-lengh-ext" id="ear-lengh-ext" required/>
+              <label for="work-num-ext">Broj radnih navoja (n)</label>
+              <input type="text" name="work-num-ext" id="work-num-ext" required/>
+            </div>
+
+          </fieldset>
+
+          <h4 class="heading-fourth">Podaci o ušicama</h4>
+          <fieldset>
+            <div class="ear-dimensions">
+              <label for="m1">Otvori ušica (m1)</label>
+              <input type="text" name="m1" id="m1" />
+              <label for="m2">Otvori ušica (m2)</label>
+              <input type="text" name="m2" id="m2" />
+              <label for="ear-position">Položaj ušica (0, 90, 180, 270)</label>
+              <input type="text" name="ear-position" id="ear-position" />
+              <label for="ear-type">Tip ušica (izaberite sa slike)</label>
+              <input type="text" name="ear-type" id="ear-type" />
+            </div>
+            <img
+              src="img/loop-type.jpg"
+              alt="šablon kompresivne opruge"
+              class="template template--loop"
+            />
+          </fieldset>
+
+          <h4 class="heading-fourth">Sile u opruzi</h4>
+          <fieldset>
+            <div class="inputs-wrapper">
+              <div>
+                <label for="tough-ext">Krutost (c)</label>
+                <input type="text" name="tough-ext" id="tough-ext" />
+              </div>
+              <div>
+                <label for="L1-ext">Dužina (L1)</label>
+                <input type="text" name="L1-ext" id="L1" -ext />
+              </div>
+              <div>
+                <label for="L2-ext">Dužina (L2)</label>
+                <input type="text" name="L2-ext" id="L2-ext" />
+              </div>
+              <div>
+                <label for="Ln-ext">Dužina (Ln)</label>
+                <input type="text" name="Ln-ext" id="Ln-ext" />
+              </div>
+              <div>
+                <label for="Fo-ext">Sila prednapona (Fo)</label>
+                <input type="text" name="Fo-ext" id="Fo-ext" />
+              </div>
+              <div>
+                <label for="F1-ext">Sila (F1)</label>
+                <input type="text" name="F1-ext" id="F1-ext" />
+              </div>
+              <div>
+                <label for="F2-ext">Sila (F2)</label>
+                <input type="text" name="F2-ext" id="F2-ext" />
+              </div>
+              <div>
+                <label for="Fn-ext">Sila (Fn)</label>
+                <input type="text" name="Fn-ext" id="Fn-ext" />
+              </div>
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Materijal</h4>
+          <fieldset>
+            <div>
+              <input type="radio" name="material-comp" id="steel-pat-comp" />
+              <label for="steel-pat-comp"
+                >EN 10270-1 SM/SH/DH (DIN 17223) -čelična patentirana žica B;C;D
+                klasa</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="material-comp" id="spring-rod-comp" />
+              <label for="spring-rod-comp"
+                >EN 10270-2 (DIN 17225)- opružne šipke (Č 4230/Č4830)</label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="material-comp"
+                id="chrome-nickel-comp"
+              />
+              <label for="chrome-nickel-comp"
+                >EN 10270-3 (DIN 17224) hrom-nikl (PROHROM) žica</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="material-comp" id="spring-sheet-comp" />
+              <label for="spring-sheet-comp"
+                >DIN 17222 opružni limovi (Č 4830/Č1730)</label
+              >
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Hemijska zaštita</h4>
+          <fieldset>
+            <div>
+              <input type="radio" name="protection-comp" id="no-pro-comp" />
+              <label for="no-pro-comp">Bez zaštite</label>
+            </div>
+            <div>
+              <input type="radio" name="protection-comp" id="white-comp" />
+              <label for="white-comp">Belo pocinkovano</label>
+            </div>
+            <div>
+              <input type="radio" name="protection-comp" id="yellow-comp" />
+              <label for="yellow-comp">Žuto pocinkovano</label>
+            </div>
+            <div>
+              <input type="radio" name="protection-comp" id="black-comp" />
+              <label for="black-comp">Crno pocinkovano</label>
+            </div>
+          </fieldset>
+
+          <h4 class="heading-fourth">Količina</h4>
+          <fieldset>
+            <input type="number" name="qty-comp" />
+          </fieldset>
+
+          <h4 class="heading-fourth">Dodatne napomene</h4>
+          <textarea
+            name="directions-comp"
+            id="directions-comp"
+            cols="50"
+            rows="10"
+          ></textarea>
+
+          <p class="paragraph">
+            * pre poručivanja proverite da li ste ispravno popunili porudžbenicu
+          </p>
+          <button class="submit">Poručite</button>
+        </form>
+      </section>
+
+      <section class="order__contacts">
+        <div class="order__contact order__contacts--torsion order__section">
+          <h3 class="heading-tertiary">
+            Torzione opruge
+          </h3>
+          <p class="paragraph">
+            Torzione opruge možemo izraditi po vašim nacrtima i merama. Možete
+            nas kontaktirati putem telefona i imejla.
+          </p>
+          <p class="paragraph">
+            tel: 063/ 603-837
+          </p>
+          <p class="paragraph">
+            e-mail: cobica67@gmail.com
+          </p>
+        </div>
+
+        <div class="order__contact order__contacts--special order__section">
+          <h3 class="heading-tertiary">
+            Specijalne opruge i proizvodi od opružnog lima
+          </h3>
+          <p class="paragraph">
+            Specijalne opruge i proizvode od opružnog lima možemo izraditi po
+            vašim nacrtima i merama. Možete nas kontaktirati putem telefona i
+            imejla.
+          </p>
+          <p class="paragraph">
+            tel: 063/ 603-837
+          </p>
+          <p class="paragraph">
+            e-mail: cobica67@gmail.com
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <div class="footer__logo-box">
+          <img src="img/logo.png" alt="logo" class="footer__logo" />
+        </div>
+        <p>&copy; Sva prava zadržana 1986-2020.</p>
+      </div>
+      <p>Dizajn i izrada - Ljubomir Bašić</p>
+    </footer>
+  </body>
+</html>
