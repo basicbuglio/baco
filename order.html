@@ -283,19 +283,19 @@
             <div class="inputs-wrapper">
               <div>
                 <label for="name-ext">Ime i prezime</label>
-                <input type="text" name="name-ext" id="name-ext" required />
+                <input type="text" name="ime-prezime" id="name-ext" required />
               </div>
               <div>
                 <label for="comp-name-ext">Firma</label>
-                <input type="text" name="company-name-ext" id="comp-name-ext" />
+                <input type="text" name="firma-ime" id="comp-name-ext" />
               </div>
               <div>
                 <label for="phone-ext">Broj telefona</label>
-                <input type="tel" name="phone-ext" id="phone-ext" required />
+                <input type="tel" name="telefon" id="phone-ext" required />
               </div>
               <div>
                 <label for="email-ext">Email</label>
-                <input type="email" name="email-ext" id="email-ext" required />
+                <input type="email" name="e-mail" id="email-ext" required />
               </div>
             </div>
           </fieldset>
@@ -309,17 +309,17 @@
           />
             <div class="spring-dimensions">
               <label for="wire-rad-ext">Prečnik žice (d)</label>
-              <input type="text" name="wire-rad-ext" id="wire-rad-ext" required/>
+              <input type="text" name="prečnik-žice" id="wire-rad-ext" required/>
               <label for="out-rad-ext">Spoljašnji prečnik opruge (De)</label>
-              <input type="text" name="out-rad-ext" id="out-rad-ext" required/>
+              <input type="text" name="spoljašnji-prečnik-opruge" id="out-rad-ext" required/>
               <label for="length-ext">Dužina valjka opruge (Lk)</label>
-              <input type="text" name="length-ext" id="length-ext" required/>
+              <input type="text" name="dužina-lk" id="length-ext" required/>
               <label for="free-length-ext">Slobodna dužina opruge (Lo)</label>
-              <input type="text" name="free-length-ext" id="free-length-ext" required/>
+              <input type="text" name="slobodna-dužina-opruge-l0" id="free-length-ext" required/>
               <label for="ear-lenght-ext">Dužina ušice (Lh)</label>
-              <input type="text" name="ear-lengh-ext" id="ear-lengh-ext" required/>
+              <input type="text" name="dužina-usica-lh" id="ear-lengh-ext" required/>
               <label for="work-num-ext">Broj radnih navoja (n)</label>
-              <input type="text" name="work-num-ext" id="work-num-ext" required/>
+              <input type="text" name="broj-radnih-navoja" id="work-num-ext" required/>
             </div>
 
           </fieldset>
@@ -328,13 +328,13 @@
           <fieldset>
             <div class="ear-dimensions">
               <label for="m1">Otvori ušica (m1)</label>
-              <input type="text" name="m1" id="m1" />
+              <input type="text" name="otvori-ušica-m1" id="m1" />
               <label for="m2">Otvori ušica (m2)</label>
-              <input type="text" name="m2" id="m2" />
+              <input type="text" name="otvori-ušica-m2" id="m2" />
               <label for="ear-position">Položaj ušica (0, 90, 180, 270)</label>
-              <input type="text" name="ear-position" id="ear-position" />
+              <input type="text" name="položaj-ušica" id="ear-position" />
               <label for="ear-type">Tip ušica (izaberite sa slike)</label>
-              <input type="text" name="ear-type" id="ear-type" />
+              <input type="text" name="tip-ušica" id="ear-type" />
             </div>
             <img
               src="img/loop-type.jpg"
@@ -348,35 +348,35 @@
             <div class="inputs-wrapper">
               <div>
                 <label for="tough-ext">Krutost (c)</label>
-                <input type="text" name="tough-ext" id="tough-ext" />
+                <input type="text" name="krutost" id="tough-ext" />
               </div>
               <div>
                 <label for="L1-ext">Dužina (L1)</label>
-                <input type="text" name="L1-ext" id="L1" -ext />
+                <input type="text" name="dužina-l1" id="L1" -ext />
               </div>
               <div>
                 <label for="L2-ext">Dužina (L2)</label>
-                <input type="text" name="L2-ext" id="L2-ext" />
+                <input type="text" name="dužina-l2" id="L2-ext" />
               </div>
               <div>
                 <label for="Ln-ext">Dužina (Ln)</label>
-                <input type="text" name="Ln-ext" id="Ln-ext" />
+                <input type="text" name="dužina-ln" id="Ln-ext" />
               </div>
               <div>
                 <label for="Fo-ext">Sila prednapona (Fo)</label>
-                <input type="text" name="Fo-ext" id="Fo-ext" />
+                <input type="text" name="sila-prednapona-f0" id="Fo-ext" />
               </div>
               <div>
                 <label for="F1-ext">Sila (F1)</label>
-                <input type="text" name="F1-ext" id="F1-ext" />
+                <input type="text" name="sila-f1" id="F1-ext" />
               </div>
               <div>
                 <label for="F2-ext">Sila (F2)</label>
-                <input type="text" name="F2-ext" id="F2-ext" />
+                <input type="text" name="sila-f2" id="F2-ext" />
               </div>
               <div>
                 <label for="Fn-ext">Sila (Fn)</label>
-                <input type="text" name="Fn-ext" id="Fn-ext" />
+                <input type="text" name="sila-fn" id="Fn-ext" />
               </div>
             </div>
           </fieldset>
@@ -384,14 +384,14 @@
           <h4 class="heading-fourth">Materijal</h4>
           <fieldset>
             <div>
-              <input type="radio" name="material-comp" id="steel-pat-comp" />
+              <input type="radio" name="materijal" id="steel-pat-comp" />
               <label for="steel-pat-comp"
                 >EN 10270-1 SM/SH/DH (DIN 17223) -čelična patentirana žica B;C;D
                 klasa</label
               >
             </div>
             <div>
-              <input type="radio" name="material-comp" id="spring-rod-comp" />
+              <input type="radio" name="materijal" id="spring-rod-comp" />
               <label for="spring-rod-comp"
                 >EN 10270-2 (DIN 17225)- opružne šipke (Č 4230/Č4830)</label
               >
@@ -399,7 +399,7 @@
             <div>
               <input
                 type="radio"
-                name="material-comp"
+                name="materijal"
                 id="chrome-nickel-comp"
               />
               <label for="chrome-nickel-comp"
@@ -407,7 +407,7 @@
               >
             </div>
             <div>
-              <input type="radio" name="material-comp" id="spring-sheet-comp" />
+              <input type="radio" name="materijal" id="spring-sheet-comp" />
               <label for="spring-sheet-comp"
                 >DIN 17222 opružni limovi (Č 4830/Č1730)</label
               >
@@ -417,31 +417,31 @@
           <h4 class="heading-fourth">Hemijska zaštita</h4>
           <fieldset>
             <div>
-              <input type="radio" name="protection-comp" id="no-pro-comp" />
+              <input type="radio" name="hemijska-zaštita" id="no-pro-comp" />
               <label for="no-pro-comp">Bez zaštite</label>
             </div>
             <div>
-              <input type="radio" name="protection-comp" id="white-comp" />
+              <input type="radio" name="hemijska-zaštita" id="white-comp" />
               <label for="white-comp">Belo pocinkovano</label>
             </div>
             <div>
-              <input type="radio" name="protection-comp" id="yellow-comp" />
+              <input type="radio" name="hemijska-zaštita" id="yellow-comp" />
               <label for="yellow-comp">Žuto pocinkovano</label>
             </div>
             <div>
-              <input type="radio" name="protection-comp" id="black-comp" />
+              <input type="radio" name="hemijska-zaštita" id="black-comp" />
               <label for="black-comp">Crno pocinkovano</label>
             </div>
           </fieldset>
 
           <h4 class="heading-fourth">Količina</h4>
           <fieldset>
-            <input type="number" name="qty-comp" />
+            <input type="number" name="količina" />
           </fieldset>
 
           <h4 class="heading-fourth">Dodatne napomene</h4>
           <textarea
-            name="directions-comp"
+            name="dodatne-napomene"
             id="directions-comp"
             cols="50"
             rows="10"

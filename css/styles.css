@@ -592,7 +592,8 @@ body {
       align-items: flex-start; } }
   @media (max-width: 37.5em) {
     .header {
-      background-position-x: left; } }
+      background-image: linear-gradient(to right bottom, rgba(127, 179, 172, 0.5), rgba(41, 69, 77, 0.5)), url(../img/header-background-1.jpg);
+      background-position: bottom left; } }
 
 .about {
   display: flex;
@@ -619,8 +620,8 @@ body {
     filter: grayscale(30%); }
     @media (max-width: 56.25em) {
       .gallery img {
-        width: 100%;
-        margin-bottom: 10rem; } }
+        margin-bottom: 10rem;
+        width: 100%; } }
 
 :lang(en) body {
   display: flex;
